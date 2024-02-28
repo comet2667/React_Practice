@@ -1,12 +1,18 @@
-import TTable from './TTable.js'
-
+import '../css/common.css';
 function TInput() {
+    let arr = new Array;
+    function inputTodo(num){
+        let val = document.getElementsByTagName('input');
+        arr[num] = val[num].value;
+        console.log(arr[num]);
+    }
+
     return (
-        <form>
-            <span className="input-group-text" id="addon-wrapping">목표 일정</span>
-            <input type="date" name="date" id="tDate" className="form-control"/>
-            <span className="input-group-text" id="addon-wrapping">할 일</span>
-            <input type="text" name="cont" id="tdw" className="form-control" placeholder="내용 입력"/>
+        <form className="t-form">
+            <span>목표 일정</span>
+            <input onChange={()=>inputTodo(0)} type="date" name="date" id="tDate"/>
+            <span>할 일</span>
+            <input onChange={()=>inputTodo(1)} type="text" name="cont" id="tdw" placeholder="내용 입력"/>
             <input type="button" value="등록" id="tSub" className="btn btn-primary"/>
         </form>
     );
