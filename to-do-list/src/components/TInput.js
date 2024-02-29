@@ -6,7 +6,9 @@ function TInput() {
         arr[num] = val[num].value;
         console.log(arr[num]);
     }
-
+    function TSubmit() {
+        
+    }
     return (
         <form className="t-form">
             <span>목표 일정</span>
