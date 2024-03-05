@@ -1,0 +1,85 @@
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-nav > p {
+    display: flex;
+    justify-content: center;
+}
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+.nav-bar > * {
+    margin: 15px 30px 15px 30px;
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    height: 30px;
+}
+.nav-bar > *:hover {
+    background-color: rgb(119, 189, 14);
+    color: white;
+    transition-duration: 0.4s;
+}
+.active {
+    background-color: rgb(119, 189, 14);
+    color: white;
+    transition-duration: 0.4s;
+}
+.nav-bar > *:not(:hover) {
+    transition-duration: 0.4s;
+}
+.line {
+    width: 300px;
+}
+.list-main {
+    display: flex;
+    justify-content: center;
+}
+.list-table {
+    min-width: 300px;
+    max-width: 500px;
+    border-collapse: collapse;
+}
+.list-table > tr, th, td {
+    border-bottom: 1px solid rgb(209, 209, 209);
+    text-align: center;
+    height: 50px;
+    transition-duration: 0.3s;
+}
+.list-table thead {
+    background-color: rgb(214, 210, 210);
+}
+.list-table > tr:hover, th:hover, td:hover{
+    background-color: rgba(0, 0, 0, 0.11);
+    transition-duration: 0.3s;
+}
+.add-main {
+    display: flex;
+    justify-content: center;
+}
+.add-input {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.add-input div {
+    display: flex;
+    margin: 20px;
+}
+.add-input input, textarea {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 190px;
+}
+.add-input input[name='title'] {
+    height: 20px;
+}
+.add-input button {
+    width: 50px;
+}
